@@ -1,0 +1,62 @@
+﻿@page "/"
+
+<PageTitle>Scuba Air consumption</PageTitle>
+
+<h1>Hello diver</h1>
+
+<p>This simple app will calculate your air consumption from your dive.</p>
+<p></p>
+
+
+
+    <label >Enter your total Gas consumption [bar]</label> 
+    <InputNumber id="TotalGasConsumption" title="Total Gas Consumption" @bind-Value="TotalGasConsumption"></InputNumber>
+    
+    <label> Enter your cynlider size [liter]</label>
+    <InputNumber id="CylinderSize" title="Cylinder Size" @bind-Value="CylinderSize"></InputNumber> 
+    
+    <label> Enter your dive time [minutes]</label>
+    <InputNumber id="DiveTime" title="Dive Time" @bind-Value="DiveTime"></InputNumber> 
+    
+    <label> Enter your dive max depth [meters]</label>
+    <InputNumber id="MaxDepth" title="Max Depth" @bind-Value="MaxDepth" > @MaxDepth </InputNumber>
+    
+    @* <label> Enter your dive avarage depth [meters]</label>
+    <InputNumber id="AvarageDepth" title="Avarage Depth" @bind-Value="AvarageDepth"> </InputNumber> *@
+
+<p></p>
+<p role="status">Your total dive air consumption: @DiveTotalAirConsumption [liters/minute]</p>
+@* <p role="status">Your avarage dive air consumption: @DiveAvarageAirConsumption [liters/minutes]</p> *@
+
+<button class="btn btn-primary" @onclick="CalculateGasConsumpotion">Click me</button>
+
+@code {
+    public int TotalGasConsumption = 0;
+    public int CylinderSize = 0;
+    public int DiveTime = 0;
+    public int MaxDepth = 0;
+    public int AvarageDepth = 0;
+
+    private double DiveTotalAirConsumption = 0;
+    private double DiveAvarageAirConsumption = 0;
+
+    private void CalculateGasConsumpotion(){
+
+        @* DiveAvarageAirConsumption = CalculateDiveAvarageAirConsumption(); *@
+        DiveTotalAirConsumption = CalculateDiveTotalAirConsumption();
+    }
+    @* private double CalculateDiveAvarageAirConsumption()
+    {
+        var a = TotalGasConsumption * CylinderSize;
+        double b = a / (DiveTime * ((AvarageDepth/10)+1 ));
+        return b;
+    } *@
+
+    private double CalculateDiveTotalAirConsumption()
+    {
+        var a = TotalGasConsumption * CylinderSize;
+        double b = a / (DiveTime * ((MaxDepth/10)+1) );
+        return b;
+    }
+
+}

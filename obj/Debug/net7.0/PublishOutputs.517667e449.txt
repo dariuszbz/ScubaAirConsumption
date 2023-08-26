@@ -1,0 +1,7 @@
+C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\bin\Debug\net7.0\publish\ScubaAirConsumption.exe
+C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\bin\Debug\net7.0\publish\appsettings.Development.json
+C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\bin\Debug\net7.0\publish\appsettings.json
+C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\bin\Debug\net7.0\publish\ScubaAirConsumption.dll
+C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\bin\Debug\net7.0\publish\ScubaAirConsumption.deps.json
+C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\bin\Debug\net7.0\publish\ScubaAirConsumption.runtimeconfig.json
+C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\bin\Debug\net7.0\publish\ScubaAirConsumption.pdb
