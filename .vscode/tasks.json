@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "build debug",
             "command": "dotnet",
             "type": "process",
             "args": [
@@ -14,7 +14,23 @@
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "publish",
+            "label": "build Release",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/ScubaAirConsumption.csproj",
+                "-c",
+                "Release"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build publish",
             "command": "dotnet",
             "type": "process",
             "args": [

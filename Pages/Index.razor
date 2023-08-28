@@ -11,52 +11,58 @@
 
     <label >Enter your total Gas consumption [bar]</label> 
     <InputNumber id="TotalGasConsumption" title="Total Gas Consumption" @bind-Value="TotalGasConsumption"></InputNumber>
+    <br>
     
     <label> Enter your cynlider size [liter]</label>
     <InputNumber id="CylinderSize" title="Cylinder Size" @bind-Value="CylinderSize"></InputNumber> 
-    
+    <br> <br>
+
     <label> Enter your dive time [minutes]</label>
     <InputNumber id="DiveTime" title="Dive Time" @bind-Value="DiveTime"></InputNumber> 
-    
+    <br><br>
+
     <label> Enter your dive max depth [meters]</label>
     <InputNumber id="MaxDepth" title="Max Depth" @bind-Value="MaxDepth" > @MaxDepth </InputNumber>
-    
-    @* <label> Enter your dive avarage depth [meters]</label>
-    <InputNumber id="AvarageDepth" title="Avarage Depth" @bind-Value="AvarageDepth"> </InputNumber> *@
+    <br>
+    <label> Enter your dive avarage depth [meters]</label>
+    <InputNumber id="AvarageDepth" title="Avarage Depth" @bind-Value="AvarageDepth"> </InputNumber>
+    <br> <br>
 
 <p></p>
-<p role="status">Your total dive air consumption: @DiveTotalAirConsumption [liters/minute]</p>
-@* <p role="status">Your avarage dive air consumption: @DiveAvarageAirConsumption [liters/minutes]</p> *@
+<p>Your Surface Air Consumption Rate (based on max depth): @DiveTotalAirConsumption [liters/minute]</p>
+<p>Your avarage dive air consumption (based on avagare): @DiveAvarageAirConsumption [liters/minutes]</p>
 
-<button class="btn btn-primary" @onclick="CalculateGasConsumpotion">Click me</button>
+<button class="btn btn-primary" @onclick="CalculateGasConsumpotion"> Calculate </button>
 
 @code {
-    public int TotalGasConsumption = 0;
-    public int CylinderSize = 0;
-    public int DiveTime = 0;
-    public int MaxDepth = 0;
-    public int AvarageDepth = 0;
+    public double TotalGasConsumption = 0;
+    public double CylinderSize = 0;
+    public double DiveTime = 0;
+    public double MaxDepth = 0;
+    public double AvarageDepth = 0;
 
     private double DiveTotalAirConsumption = 0;
     private double DiveAvarageAirConsumption = 0;
 
+    private const int DecimalRoundNumber = 2;
+
     private void CalculateGasConsumpotion(){
 
-        @* DiveAvarageAirConsumption = CalculateDiveAvarageAirConsumption(); *@
+        DiveAvarageAirConsumption = CalculateDiveAvarageAirConsumption();
         DiveTotalAirConsumption = CalculateDiveTotalAirConsumption();
     }
-    @* private double CalculateDiveAvarageAirConsumption()
+    private double CalculateDiveAvarageAirConsumption()
     {
         var a = TotalGasConsumption * CylinderSize;
         double b = a / (DiveTime * ((AvarageDepth/10)+1 ));
-        return b;
-    } *@
+        return Math.Round(b,DecimalRoundNumber);
+    }
 
     private double CalculateDiveTotalAirConsumption()
     {
         var a = TotalGasConsumption * CylinderSize;
         double b = a / (DiveTime * ((MaxDepth/10)+1) );
-        return b;
+        return Math.Round(b,DecimalRoundNumber);
     }
 
 }

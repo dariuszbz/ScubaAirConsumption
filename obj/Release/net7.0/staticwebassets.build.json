@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ci2owMVbgPthGXfOjCYegNqYB7Uyl1quxtaRZyos1q8=",
+  "Hash": "E4DPiVJOKr5CCIrLjF4NHp8NNxFVNP5hN1Sf4klBwcw=",
   "Source": "ScubaAirConsumption",
   "BasePath": "_content/ScubaAirConsumption",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\dariu\\source\\repos\\Blazor\\ScubaAirConsumption\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "ScubaAirConsumption",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dariu\\source\\repos\\Blazor\\ScubaAirConsumption\\wwwroot\\",
+      "BasePath": "_content/ScubaAirConsumption",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\dariu\\source\\repos\\Blazor\\ScubaAirConsumption\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
@@ -185,23 +202,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\dariu\\source\\repos\\Blazor\\ScubaAirConsumption\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "ScubaAirConsumption",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dariu\\source\\repos\\Blazor\\ScubaAirConsumption\\wwwroot\\",
-      "BasePath": "_content/ScubaAirConsumption",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\dariu\\source\\repos\\Blazor\\ScubaAirConsumption\\wwwroot\\css\\open-iconic\\ICON-LICENSE",

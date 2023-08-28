@@ -6,7 +6,6 @@ C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\bin\Release\net7.0\ScubaA
 C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\bin\Release\net7.0\ScubaAirConsumption.runtimeconfig.json
 C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\bin\Release\net7.0\ScubaAirConsumption.dll
 C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\bin\Release\net7.0\ScubaAirConsumption.pdb
-C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\obj\Release\net7.0\ScubaAirConsumption.csproj.AssemblyReference.cache
 C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\obj\Release\net7.0\ScubaAirConsumption.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\obj\Release\net7.0\ScubaAirConsumption.AssemblyInfoInputs.cache
 C:\Users\dariu\source\repos\Blazor\ScubaAirConsumption\obj\Release\net7.0\ScubaAirConsumption.AssemblyInfo.cs
